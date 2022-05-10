@@ -1,7 +1,5 @@
-the info post will go in here 
-{{> post-info post }}
-{{#if loggedIn}}  {{!-- this is if you are logged in  --}}
-
+{{> post-info post}}
+{{#if loggedIn}}
 <form class="comment-form">
     <div>
         <textarea name="comment-body"></textarea>
@@ -11,7 +9,6 @@ the info post will go in here
         <button type="submit">add comment</button>
     </div>
 </form>
-
 {{/if}}
 
 {{> comments post.comments}}
